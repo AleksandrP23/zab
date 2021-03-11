@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Titles -->
+	<title>Забей</title>
+
+	<!-- Адаптивная  верстка -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<!-- Syles -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	<link rel="stylesheet" href="libs/slick-1.8.1/slick/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap"
+		rel="stylesheet">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container-big">
+			<nav class="nav">
+				<a href="#" class="logo">
+					<img src="./img/logo.svg" class="logo__img">
+					<span class="logo__text">Забей</span>
+				</a>
+
+				<button id="navigation__button" class="cmn-toggle-switch cmn-toggle-switch__htx">
+					<span>toggle menu</span>
+				</button>
+
+				<ul class="header-list">
+					<li class="header-list__item"><a href="#products" class="header-list__link">О продукте</a></li>
+					<li class="header-list__item"><a href="#price" class="header-list__link">Цены</a></li>
+					<li class="header-list__item"><a href="#contacts" class="header-list__link">Контакты</a></li>
+					<li class="header-list__item"><a href="#" class="header-list__link header-list__link--btn">Вход</a></li>
+				</ul>
+			</nav>
+			<div class="banner">
+				<div class="banner-bg"></div>
+				<h1 class="banner__title">Система бронирования столиков</h1>
+				<h4 class="banner__subtitle">Автоматизация рабочего места хостес, дистационная оплата депозита, бронирования
+					на сайте ресторана и электронное меню</h4>
+				<a href="#ex-form" rel="modal:open" class="banner__link">Попробовать бесплатно</a>
+				<a href="#ex1" rel="modal:open" class="banner__arrow">
+					<div class="banner__arrow-img"><svg width="15" height="26" viewBox="0 0 15 26"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M0 2.05756C0 0.244487 2.21904 -0.633026 3.45907 0.689679L13.7176 11.6321C14.4388 12.4014 14.4388 13.5986 13.7176 14.3679L3.45908 25.3103C2.21904 26.633 0 25.7555 0 23.9424V2.05756Z" />
+						</svg>
+					</div>
+					<span class="banner__link-text">Как это работает</span>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<section class="included">
+		<div class="container">
+			<h2 class="title">В систему входит</h2>
+			<div class="included__inner">
+				<div class="included__item mr-20">
+					<div class="included__img"><img src="./img/included/included-1.svg" alt="included"></div>
+					<div class="included-desc">
+						<h4 class="included-desc__title">Приложение на iPad* для хостес
+						</h4>
+						<div class="included-desc__text">создание и редактирование бронирований, изменение статусов</div>
+					</div>
+				</div>
+				<div class="included__item">
+					<div class="included__img"><img src="./img/included/included-2.svg" alt="included"></div>
+					<div class="included-desc">
+						<h4 class="included-desc__title">Личный кабинет</h4>
+						<div class="included-desc__text">история бронирований, отчеты и выгрузка, управление картами залов
+						</div>
+					</div>
+				</div>
+				<div class="included__item mr-20">
+					<div class="included__img"><img src="./img/included/included-3.svg" alt="included"></div>
+					<div class="included-desc">
+						<h4 class="included-desc__title">Модуль на сайт ресторана</h4>
+						<div class="included-desc__text">для самостоятельного бронирования гостем</div>
+					</div>
+				</div>
+				<div class="included__item">
+					<div class="included__img"><img src="./img/included/included-4.svg" alt="included"></div>
+					<div class="included-desc">
+						<h4 class="included-desc__title">Мобильное приложение для гостей</h4>
+					</div>
+				</div>
+			</div>
+			<div class="included__footnote">* iPad не предоставляется</div>
+		</div>
+	</section>
+
+	<section id="products" class="app-slider">
+		<h2 class="title title--app">Приложение для хостес</h2>
+		<p class="app-slider__text">Приложение предназначено для iPad и позволяет создавать и редактировать
+			бронирования, а также искать их по множеству разных фильтров.</p>
+		<p class="app-slider__text">В любой момент времени можно оценить загруженность ресторана, как в прошлом, так и
+			в планируемом будущем.</p>
+
+		<div class="slider">
+			<div class="slider__item">
+				<img src="./img/slide-1.png" alt="slide">
+			</div>
+			<div class="slider__item">
+				<img src="./img/slide-2.png" alt="slide">
+			</div>
+			<div class="slider__item">
+				<img src="./img/slide-3.png" alt="slide">
+			</div>
+			<div class="slider__item">
+				<img src="./img/slide-4.png" alt="slide">
+			</div>
+		</div>
+	</section>
+
+	<section class="pay">
+		<div class="container">
+			<div class="pay-inner">
+				<ul class="pay__list">
+					<h4 class="pay__title">Оплата депозита</h4>
+					<li class="pay__item">Гость оплачивает депозит дистационно, не приходя в ресторан</li>
+					<li class="pay__item">После успешной оплаты гостю придет чек в электронном формате</li>
+					<li class="pay__item">Деньги поступают на расчетный счет ресторана еженедельно</li>
+					<li class="pay__item">Оплаченные депозиты отображаются на планшете у хостеса и в личном кабинете
+						ресторана </li>
+				</ul>
+				<div class="pay-img">
+					<img src="./img/pay.png" alt="pay">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="manual">
+		<div class="container-big">
+			<div class="manual-inner">
+				<div class="manual__item">
+					<div class="manual__img"><img src="./img/manual-1.svg" alt="manual"></div>
+					<div class="manual__text">Хостес создает новое бронирование</div>
+				</div>
+				<div class="manual__item">
+					<div class="manual__img"><img src="./img/manual-2.svg" alt="manual"></div>
+					<div class="manual__text">Гость получает ссылку на оплату депозита по sms</div>
+				</div>
+				<div class="manual__item">
+					<div class="manual__img manual__img--lh"><img src="./img/manual-3.svg" alt="manual"></div>
+					<div class="manual__text">Гость переходит по ссылке и оплачивает депозит</div>
+				</div>
+				<div class="manual__item">
+					<div class="manual__img"><img src="./img/manual-4.svg" alt="manual"></div>
+					<div class="manual__text">Хостес видит в планшете факт оплаты</div>
+				</div>
+				<div class="manual__item">
+					<div class="manual__img manual__img--none"><img src="./img/manual-5.svg" alt="manual"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="widget">
+		<div class="container-big">
+			<div class="widget-inner">
+				<div class="widget__img"><img src="./img/widget.png" alt="widget"></div>
+				<div class="widget__desc">
+					<h4 class="widget__title">Виджет бронирования <br> на сайт ресторана</h4>
+					<p class="widget__text">Через сайт ресторана гости могут отправить заявку на бронирование</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="account">
+		<div class="container-big">
+			<div class="account-inner">
+				<ul class="account__list">
+					<h4 class="account__title">Личный кабинет</h4>
+					<li class="account__item">Подробная отчетность о работе ресторана </li>
+					<li class="account__item">История бронирований</li>
+					<li class="account__item">Экспорт данных в Excel</li>
+				</ul>
+				<div class="account-img">
+					<img src="./img/account.png" alt="account">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="electron-menu">
+		<div class="container">
+			<div class="electron-menu-inner">
+				<div class="electron-menu-img">
+					<img src="./img/electron-menu1.png" alt="electron-menu">
+				</div>
+				<ul class="electron-menu__list">
+					<h4 class="electron-menu__title">Электронное меню</h4>
+					<li class="electron-menu__item">Не требует оборудования, т.к. гости просматривают его на своих телефонах
+					</li>
+					<li class="electron-menu__item">Подробное описание блюд с фотографиями</li>
+					<li class="electron-menu__item">Фильтры для удобного поиска</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="price" class="price">
+		<div class="container">
+			<div class="price-inner">
+				<div class="price__card">
+					<h4 class="price__title">Demo <span class="color-fonts">на 14 дней </span></h4>
+					<ul class="price__list">
+						<li class="price__item">Лизенция для iPad <span>1 шт</span></li>
+						<li class="price__item">прием депозита <span class="size-fonts">нет</span></li>
+						<li class="price__item">отправка sms <span class="size-fonts">нет</span></li>
+					</ul>
+					<div class="price__cost">Бесплатно</div>
+					<a href="#ex-form" rel="modal:open" class="price__btn">Попробовать</a>
+				</div>
+				<div class="price__card">
+					<h4 class="price__title">Тариф “Старт”</span></h4>
+					<ul class="price__list">
+						<li class="price__item">Лизенция для iPad <span>2 шт</span></li>
+						<li class="price__item">прием депозита <span>2,5%</span></li>
+						<li class="price__item">отправка sms <span>3 ₽/шт</span></li>
+					</ul>
+					<div class="price__cost">5 000 ₽/мес</div>
+					<a href="#ex-form" rel="modal:open" class="price__btn">Приобрести</a>
+				</div>
+				<div class="price__card">
+					<h4 class="price__title">Тариф “Стандарт”</span></h4>
+					<ul class="price__list">
+						<li class="price__item">Лизенция для iPad <span>2 шт</span></li>
+						<li class="price__item">прием депозита <span>2%</span></li>
+						<li class="price__item">отправка sms <span>3 ₽/шт</span></li>
+					</ul>
+					<div class="price__cost">10 000 ₽/мес</div>
+					<a href="#ex-form" rel="modal:open" class="price__btn">Приобрести</a>
+				</div>
+			</div>
+			<div class="price__footnote">*оборудование не предоставляется. Требуется iPad на iOS версии 11 или новее</div>
+		</div>
+	</section>
+
+	<section class="sale">
+		<div class="sale-inner">
+			<h2 class="sale__title">Попробуйте бесплатно <span>14 дней</span></h2>
+			<a href="#ex-form" rel="modal:open" class="sale__btn">Начать сейчас</a>
+		</div>
+	</section>
+
+	<footer id="contacts" class="footer">
+		<div class="container">
+			<div class="footer-inner">
+				<ul class="footer__list">
+					<h4 class="footer__title">Поддержка</h4>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Справка</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Пользовательское соглашение</a>
+					</li>
+				</ul>
+				<ul class="footer__list">
+					<h4 class="footer__title">Контакты</h4>
+					<li class="footer__item">
+						<a href="mailto:sales@zabei.app" class="footer__link">sales@zabei.app</a>
+					</li>
+					<li class="footer__item">
+						<a href="tel:+79009579676" class="footer__link">+7 900 957 96 76</a>
+					</li>
+				</ul>
+				<ul class="footer__list">
+					<h4 class="footer__title">О компании</h4>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Партнерам</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Клиентам</a>
+					</li>
+				</ul>
+				<div class="footer__list">
+					<div class="footer__social">
+						<div class="footer__border">
+							<svg width="19" height="16" viewBox="0 0 19 16" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M7.30571 10.5269L6.99998 14.7897C7.4374 14.7897 7.62684 14.6034 7.85403 14.3797L9.90482 12.4369L14.1543 15.5217C14.9336 15.9523 15.4827 15.7256 15.693 14.811L18.4823 1.8548L18.4831 1.85403C18.7303 0.712003 18.0664 0.265421 17.3071 0.545584L0.911504 6.76797C-0.207463 7.19852 -0.19052 7.81686 0.721287 8.09703L4.91298 9.38945L14.6495 3.35028C15.1077 3.0495 15.5243 3.21592 15.1816 3.51669L7.30571 10.5269Z" />
+							</svg>
+						</div>
+						<div class="footer__border">
+							<svg width="23" height="13" viewBox="0 0 23 13" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M18.9925 7.59057C18.6287 7.1687 18.7328 6.98101 18.9925 6.6039C18.9972 6.5996 22.0001 2.78895 22.3095 1.49663L22.3114 1.49577C22.4651 1.02482 22.3114 0.678711 21.5679 0.678711H19.1078C18.4815 0.678711 18.1928 0.975745 18.0381 1.30808C18.0381 1.30808 16.7855 4.06146 15.0136 5.84625C14.4417 6.36197 14.1773 6.52728 13.8651 6.52728C13.7114 6.52728 13.4723 6.36197 13.4723 5.89102V1.49577C13.4723 0.930975 13.297 0.678711 12.7785 0.678711H8.91027C8.51744 0.678711 8.284 0.942168 8.284 1.18754C8.284 1.72307 9.16996 1.84619 9.26184 3.35288V6.62198C9.26184 7.33831 9.12028 7.47004 8.8062 7.47004C7.96992 7.47004 5.94017 4.70546 4.73731 1.5414C4.49449 0.927531 4.25729 0.679572 3.62634 0.679572H1.16531C0.463101 0.679572 0.321533 0.976606 0.321533 1.30894C0.321533 1.89612 1.15781 4.81567 4.21042 8.67281C6.24486 11.3057 9.10996 12.7323 11.7163 12.7323C13.2829 12.7323 13.4742 12.4154 13.4742 11.8705C13.4742 9.3547 13.3326 9.11707 14.1173 9.11707C14.4811 9.11707 15.1074 9.28238 16.5699 10.5523C18.2415 12.0581 18.5162 12.7323 19.4519 12.7323H21.912C22.6132 12.7323 22.9686 12.4154 22.7642 11.7904C22.2964 10.4757 19.135 7.77138 18.9925 7.59057Z" />
+							</svg>
+						</div>
+
+						<div class="footer__border footer__border--lh">
+							<svg width="20" height="21" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0)">
+									<path
+										d="M13.2589 0.856934H6.02679C2.69879 0.856934 0 3.55573 0 6.88372V14.1159C0 17.4439 2.69879 20.1426 6.02679 20.1426H13.2589C16.5869 20.1426 19.2857 17.4439 19.2857 14.1159V6.88372C19.2857 3.55573 16.5869 0.856934 13.2589 0.856934ZM17.4777 14.1159C17.4777 16.4422 15.5853 18.3346 13.2589 18.3346H6.02679C3.70045 18.3346 1.80804 16.4422 1.80804 14.1159V6.88372C1.80804 4.55738 3.70045 2.66497 6.02679 2.66497H13.2589C15.5853 2.66497 17.4777 4.55738 17.4777 6.88372V14.1159Z" />
+									<path
+										d="M9.64296 5.67822C6.98033 5.67822 4.82153 7.83702 4.82153 10.4997C4.82153 13.1623 6.98033 15.3211 9.64296 15.3211C12.3056 15.3211 14.4644 13.1623 14.4644 10.4997C14.4644 7.83702 12.3056 5.67822 9.64296 5.67822ZM9.64296 13.513C7.98198 13.513 6.62957 12.1606 6.62957 10.4997C6.62957 8.83746 7.98198 7.48626 9.64296 7.48626C11.3039 7.48626 12.6564 8.83746 12.6564 10.4997C12.6564 12.1606 11.3039 13.513 9.64296 13.513Z" />
+									<path
+										d="M14.8256 5.95922C15.1804 5.95922 15.468 5.67159 15.468 5.31677C15.468 4.96195 15.1804 4.67432 14.8256 4.67432C14.4707 4.67432 14.1831 4.96195 14.1831 5.31677C14.1831 5.67159 14.4707 5.95922 14.8256 5.95922Z" />
+								</g>
+							</svg>
+						</div>
+					</div>
+					<a href="#" class="footer__download">
+						<img src="./img/download.png" alt="download">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Modal HTML embedded directly into document -->
+	<div id="ex1" class="modal">
+		<iframe width="850" height="600" src="https://www.youtube.com/embed/u2GsF1NV9FI" frameborder="0"
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
+	<!-- Modal HTML embedded directly into document -->
+
+	<div id="ex-form" class="modal">
+		<h5 class="title-form">Отправка заявки</h5>
+		<form id="contact-form" class="contact-form" method="POST">
+
+			<label class="contact-form__label">Фамилия и имя</label>
+			<input type="text" class="contact-form__input" name="name" placeholder="Ivan Ivanov">
+
+			<label class="contact-form__label">Название заведения</label>
+			<input type="text" class="contact-form__input" name="name" placeholder="Restaurant">
+
+			<div class="group-lable">
+				<div class="group-lable-one">
+					<label class="contact-form__label">Телефон</label>
+					<input type="tel" class="contact-form__input" name="name" placeholder="+7(000) 555-00-00">
+				</div>
+				<div class="group-lable-two">
+					<label class="contact-form__label">Город</label>
+					<input type="text" class="contact-form__input" name="name" placeholder="Москва">
+				</div>
+
+			</div>
+			<label class="contact-form__label">E-mail</label>
+			<input type="email" class="contact-form__input" name="name" placeholder="Укажите e-mail">
+
+
+			<label class="contact-form__label">Тариф</label>
+			<div class="svg-img">
+				<svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect y="0.953613" width="1.34877" height="10.1157" rx="0.674383" transform="rotate(-45 0 0.953613)"
+						fill="#1B1B1E" />
+					<rect x="13.3521" width="1.34877" height="10.1157" rx="0.674383" transform="rotate(45 13.3521 0)"
+						fill="#1B1B1E" />
+				</svg>
+			</div>
+			<select class="select">
+				<option>Demo <span class="color-red">(14 дней)</span> </option>
+				<option>Старт</option>
+				<option>Стандарт</option>
+			</select>
+
+			<p class="contact-form__text">Нажимая на кнопку “Отправить заявку” вы соглашаетесь с <a href="#">Политикой
+					конфиденциальности</a> </p>
+			<a href="#" class="contact-form__btn">Отправить заявку</a>
+		</form>
+	</div>
+
+	<!-- Scripts -->
+	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="libs/slick-1.8.1/slick/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<script src="libs/jquery.malihu.PageScroll2id.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
